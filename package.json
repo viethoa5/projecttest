@@ -4,6 +4,10 @@
   "description": "MERN shopping cart app",
   "main": "server.js",
   "type": "module",
+  "engines": {
+    "node": "18.12.1",
+    "npm": "8.19.2"
+  },
   "scripts": {
     "start": "node backend/server",
     "server": "nodemon backend/server",
