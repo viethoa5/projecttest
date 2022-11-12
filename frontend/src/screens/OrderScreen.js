@@ -50,6 +50,7 @@ const OrderScreen = ({ match, history }) => {
     if (!userInfo) {
       history.push('/login')
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps  
 
     const addPayPalScript = async () => {
       const { data: clientId } = await axios.get('/api/config/paypal')
@@ -75,6 +76,7 @@ const OrderScreen = ({ match, history }) => {
       }
     }
   }, [dispatch, orderId, successPay, successDeliver, order])
+  // eslint-disable-next-line react-hooks/exhaustive-deps
 
   const successPaymentHandler = (paymentResult) => {
     console.log(paymentResult)
