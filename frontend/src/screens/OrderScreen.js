@@ -75,7 +75,7 @@ const OrderScreen = ({ match, history }) => {
         setSdkReady(true)
       }
     }
-  }, [dispatch, orderId, successPay, successDeliver, order])
+  }, [dispatch, orderId, successPay, successDeliver, order,history,userInfo])
   // eslint-disable-next-line react-hooks/exhaustive-deps
 
   const successPaymentHandler = (paymentResult) => {
